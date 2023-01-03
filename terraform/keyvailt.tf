@@ -25,11 +25,4 @@ resource "azurerm_key_vault" "keyvault" {
    }
 }
 
-resource "azurerm_key_vault_secret" "sql-pwd" {
-  name         = var.secret_name
-  value        = var.secret_value
-  key_vault_id = azurerm_key_vault.keyvault.id
-  depends_on = [
-    azurerm_key_vault.keyvault
-  ]
-}
+
