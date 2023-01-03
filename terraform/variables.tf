@@ -17,26 +17,3 @@ variable "environment" {
 }
 
 
-variable "secret_name" {
-  type        = string
-  default     = "sqladminuser"
-  description = "Key Vault Secret name in Azure"
-}
-
-variable "secret_value" {
-  type        = string
-  description = "Key Vault Secret value in Azure"
-  sensitive   = true
-}
-
-variable "synapse_sql_pool" {
-  type = string
-  description = "Sql Pool name in Azure Synapse"
-  default = "syapasesqlpool"
-}
-
-variable "synapse_spark_pool" {
-  type = string
-  description = "Spark Pool name in Azure Synapse"
-  default = "sparkpool"
-}
