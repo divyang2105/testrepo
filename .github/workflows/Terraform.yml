@@ -26,13 +26,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
  
-    - name: 'Terraform Format'
-#       uses: hashicorp/terraform-github-actions@master
-      uses: dflook/terraform-fmt
-      with:
-        tf_actions_version: 1.29.1
-        tf_actions_subcommand: 'fmt'
-        tf_actions_working_dir: "./terraform"
+#     - name: 'Terraform Format'
+# #       uses: hashicorp/terraform-github-actions@master
+#       uses: dflook/terraform-fmt
+#       with:
+#         tf_actions_version: 1.29.1
+#         tf_actions_subcommand: 'fmt'
+#         tf_actions_working_dir: "./terraform"
          
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
