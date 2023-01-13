@@ -3,6 +3,6 @@ resource "azurerm_resource_group" "synapse_rg" {
   location = var.location
 
   tags = {
-    "enviroment" = "dev"
+    "environment" = "dev"
   }
 }
