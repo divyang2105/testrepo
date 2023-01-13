@@ -5,5 +5,6 @@ resource "azurerm_resource_group" "synapse_rg" {
   tags = {
     "environment" = "dev"
     "version" = "v1"
+    "version" = "v2"
   }
 }
