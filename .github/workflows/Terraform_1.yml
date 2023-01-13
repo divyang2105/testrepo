@@ -4,8 +4,8 @@ on:
   push:
     branches: 
       - '*'
-    paths: 
-      - 'Terraform/**'
+#     paths: 
+#       - 'terraform/**'
   pull_request:
 
 permissions:
