@@ -7,8 +7,8 @@ terraform {
   }
   backend "azurerm" {
         resource_group_name  = "cloud-shell-storage-centralindia"
-        storage_account_name = "csg100320024b58200e"
-        container_name       = "tfstatefiles"
+        storage_account_name = "csg100320009c814a38"
+        container_name       = "blob"
         key                  = "dev.terraform.tfstate"
   }
 }
