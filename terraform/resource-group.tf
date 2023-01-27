@@ -6,5 +6,6 @@ resource "azurerm_resource_group" "synapse_rg" {
     "environment" = "dev"
     "version" = "v1"
     "version" = "v2"
+    "workflow" = "github"
   }
 }
