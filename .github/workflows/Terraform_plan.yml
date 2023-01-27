@@ -1,10 +1,10 @@
 name: 'Terraform'
 
 on:
-  push:
-    branches: 
-      - '*'
-      - '!main'
+#   push:
+#     branches: 
+#       - '*'
+#       - '!main'
    # paths: 
    #   - 'terraform/**'
   workflow_dispatch:
@@ -12,7 +12,7 @@ on:
 
 jobs:
   terraform_1:
-    name: 'Terraform'
+    name: 'Terraform_plan'
     runs-on: ubuntu-latest
     env:
       ARM_CLIENT_ID: ${{ secrets.CLIENT_ID }}
