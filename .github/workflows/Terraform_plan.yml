@@ -12,7 +12,7 @@ on:
 
 jobs:
   terraform_1:
-    name: 'Terraform_plan'
+    name: 'Terraform'
     runs-on: ubuntu-latest
     env:
       ARM_CLIENT_ID: ${{ secrets.CLIENT_ID }}
