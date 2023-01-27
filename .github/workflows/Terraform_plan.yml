@@ -1,4 +1,4 @@
-name: 'Terraform_1'
+name: 'Terraform'
 
 on:
 #   push:
@@ -10,7 +10,7 @@ on:
 
 jobs:
   terraform_1:
-    name: 'Terraform_1'
+    name: 'Terraform'
     runs-on: ubuntu-latest
     env:
       ARM_CLIENT_ID: ${{ secrets.CLIENT_ID }}
